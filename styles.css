@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Georama", sans-serif;
+    background-color: RGB(224,241,223);
+}
+
+#page-wrapper{
+position: relative;
+}
+
+/*header*/
+header{
+    width: 100%;
+    position: fixed;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    background-color: #A7DDAC;
+    padding: 0 20px;
+}
+
+.logo{
+   width: 80vw; 
+}
+
+.logo> img{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+}
+/*Nav*/
+nav > ul{
+  display: flex;
+  width:40vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+nav > ul > li {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*Primera section formulario*/
+
+#formulario{
+    display: flex;
+    height: 450px;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+#formulario  input[type='email'] {
+    max-width: 300px;
+    width: 110%;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+#formulario input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+
+/*Segunda section */
