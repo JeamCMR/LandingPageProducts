@@ -43,6 +43,7 @@ header{
     text-align: center;
     margin-left: 20px;
 }
+
 /*Nav*/
 nav > ul{
   display: flex;
@@ -61,8 +62,10 @@ li {
     list-style: none;
 }
 a{
+    color: black;
     text-decoration: none;
 }
+
 
 /*Primera section formulario*/
 
@@ -111,8 +114,7 @@ a{
     justify-content: center;
     align-items: center;
     background-color: #E0F1DF;
-    height: 450px;
-    background-image: ;
+    height: 300px;
 }
 
 .segunda-section p {
@@ -120,4 +122,122 @@ a{
     line-height:3;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.664);
+}
+
+#promocion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+/*Productos*/
+
+.tercer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: calc(100% /3);
+    background-color: #EEEEEE;
+}
+
+
+.producto> #referencia{
+    background-color: #A7DDAC;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.producto> h3 {
+    margin-top: 20px;
+    
+}
+
+.producto> ol{
+    margin: 15px 0;
+}
+
+.producto > ol > li{
+    padding: 5px 0;
+}
+
+
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.producto > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+footer > ul > li {
+    padding: 0 10px;
+}
+
+@media only screen and (max-width:580px) {
+
+    .logo{
+        width: 30vw; 
+     }
+     
+     .logo> img{
+         width: 200%; 
+     }
+    
+    nav > ul{
+    
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      nav > ul > li {
+        margin: 4px;
+    }
+
+      .tercer-section{
+        display: grid;
+        grid-auto-columns: 40rem;
+        grid-template-columns: repeat(auto-fill, minmax(25rem) 1fr);
+        justify-items: center;
+   
+    }
+
 }
